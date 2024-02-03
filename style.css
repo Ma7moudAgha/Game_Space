@@ -1,0 +1,263 @@
+body {
+    color: #eee !important;
+}
+
+* {
+    font-family: 'lato';
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background: black;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(23, 80, 123, 0.326);
+    border-radius: 6px;
+}
+
+.navbar {
+    background-color: rgba(23, 80, 123, 0.326);
+    height: 70px;
+}
+
+.nav-link {
+    color: #eee !important;
+    margin: 0 20px;
+    font-size: 18px !important;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+.nav-link:hover {
+    color: #eee !important;
+    background-color: #9168FF3f;  
+}
+
+.brand-name {
+    color: #eee !important;
+    font-size: 24px !important;
+    letter-spacing: 2px;
+}
+
+/* =========================================================  Home */
+
+.home-section {
+    min-height: 100vh;
+}
+
+.home-img {
+    margin-top: 12%;
+    border-radius: 50%;
+    border: 1px solid #5a768b;
+    animation: imgTranslate infinite linear 4s;
+}
+
+@keyframes imgTranslate {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(35px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.homeText {
+    margin-top: 40%;
+}
+
+.homeText span {
+    font-size: 30px;
+    text-transform: capitalize;
+}
+
+.homeText p {
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+
+/* =========================================================  About */
+
+.about-section {
+    min-height: 100vh;
+}
+
+.section-title {
+    margin-bottom: 80px;
+    letter-spacing: 2px;
+}
+
+.about-card {
+    border-left: 2px solid #eeeeeeaf;
+    border-radius: 0 12px 12px 0;
+    padding: 12px;
+    background-color: rgba(23, 80, 123, 0.326);
+    margin: 40px 0;
+    transition: 0.3s;
+}
+
+.about-card:hover {
+    transform: translateX(20px);
+}
+
+.about-card span {
+    margin: 10px 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+}
+
+.about-card p {
+    color: #eeeeeebf;
+}
+
+.about-img {
+    margin-left: 20%;
+    width: 500px;
+    animation: imgTranslate infinite linear 3s;
+}
+
+/* =========================================================  games */
+
+.games-section {
+    min-height: 90vh;
+}
+
+.card {
+    background-color: rgba(23, 80, 123, 0.326) !important;
+    border: 1px solid #eee !important;
+    padding: 15px;
+    color: #eeeeeecf !important;
+    text-align: center;
+    transition: 0.2s;
+    margin: 60px auto;
+}
+
+.card:hover {
+    box-shadow: 5px 5px 10px #9168FF;
+}
+
+.card-img {
+    width: 160px !important;
+    margin-left: 17%;
+    margin-bottom: 8%;
+    filter: brightness(0.9);
+}
+
+
+/* =========================================================  services */
+
+.services-section {
+    min-height: 90vh;
+}
+
+.swiper {
+    width: 100%;
+    margin-top: 5%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px !important;
+    height: 300px !important;
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(08, 10, 28, 0.554) 0%, rgba(149,96,229,0.4) 100%);
+    border-right: 3px solid #eee;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin: 0 20px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 34%;
+    position: absolute;
+    right: 0;
+
+}
+
+.swiper-text{
+    width: 60%;
+    margin-top: 60px;
+}
+
+.game-name{
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+
+/* =========================================================  contact */
+
+
+.contact-section{
+    min-height: 60vh;
+    position: relative;
+    z-index: 2;
+}
+
+
+.contact-section::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #071A28af;
+    position: absolute;
+    left: 0;
+    z-index: -1;
+}
+
+.contact-img{
+    width: 300px;
+    position: absolute;
+    top: 20%;
+    left: 7%;
+    animation: imgTranslate infinite linear 3s;
+}
+
+.contact-col ul{
+    list-style: none;
+    margin: 0 40%;
+}
+
+.contact-col ul li{
+    margin: 5px 0;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+.contact-col ul li:not(:first-child){
+    color: rgba(255, 255, 255, 0.66);
+    font-size: 16px;
+}
+
+.contact-col ul li:hover:not(:first-child){
+    transform: translateX(15px);
+    color: white;
+}
+
+
+
+@media screen and (max-width:420px) {
+    .home-img{
+        width: 100%;
+    }
+    .about-img{
+        width: 300px;
+    }
+    .swiper-slide{
+        width: 100% !important;
+        height: 200px;
+    }
+    .contact-img{
+        display: none;
+    }
+}
+
